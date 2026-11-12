@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shop | PatchCare</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div id="site-header"></div>
+    <main class="container page-main">
+        <div class="page-intro"><span class="eyebrow">THE PATCHCARE COLLECTION</span>
+            <h1>Shop all products</h1>
+            <p>Find the right patch for your everyday care needs.</p>
+        </div>
+        <div class="shop-tools"><label class="search-box"><span class="sr-only">Search products</span><svg
+                    viewBox="0 0 24 24">
+                    <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                    <path d="m16 16 5 5"></path>
+                </svg><input id="product-search" type="search"
+                    placeholder="Search products or keywords…"></label><select id="category-filter"
+                aria-label="Filter by category">
+                <option value="">All categories</option>
+            </select><select id="sort-filter" aria-label="Sort products">
+                <option value="">Sort: Featured</option>
+                <option value="price-low">Price: Low to high</option>
+                <option value="price-high">Price: High to low</option>
+                <option value="name">Name: A to Z</option>
+            </select><button class="btn btn-outline btn-small" id="clear-filters">Clear</button></div>
+        <p class="results-count" id="results-count"></p>
+        <div class="product-grid" id="shop-products"></div>
+        <p class="empty-state hidden" id="empty-state">No matching products found. Try another search or clear your
+            filters.</p>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
